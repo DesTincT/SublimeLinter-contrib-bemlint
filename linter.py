@@ -16,11 +16,11 @@ from SublimeLinter.lint import NodeLinter, util
 class Bemlint(NodeLinter):
     """Provides an interface to bemlint."""
 
-    syntax = ('html','html+tt2','html+tt3')
-    cmd = 'bemlint'
+    syntax = ('html', 'txt', 'html+tt2','html+tt3')
+    cmd = ('bemlint', '--format', 'compact')
     version_args = '--version'
     version_re = r'v(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 0.0.1'
+    version_requirement = '>= 1.1.0'
     regex = (
         r'^.+?: line (?P<line>\d+), col (?P<col>\d+), '
         r'(?:(?P<error>Error)|(?P<warning>Warning)) - '
