@@ -1,4 +1,4 @@
-SublimeLinter-contrib-bemlint
+SublimeLinter-contrib-bemlint 
 ================================
 
 [![Build Status](https://travis-ci.org/DesTincT/SublimeLinter-contrib-bemlint.svg?branch=master)](https://travis-ci.org/DesTincT/SublimeLinter-contrib-bemlint)
