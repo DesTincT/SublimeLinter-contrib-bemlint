@@ -1,7 +1,7 @@
 SublimeLinter-contrib-bemlint
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-bemlint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-bemlint)
+[![Build Status](https://travis-ci.org/DesTincT/SublimeLinter-contrib-bemlint.svg?branch=master)](https://travis-ci.org/DesTincT/SublimeLinter-contrib-bemlint)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [bemlint](https://github.com/DesTincT/bemlint). It will be used with files that have the “html” syntax.
 
