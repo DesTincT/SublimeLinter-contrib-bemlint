@@ -16,7 +16,7 @@ from SublimeLinter.lint import NodeLinter, util
 class Bemlint(NodeLinter):
     """Provides an interface to bemlint."""
 
-    syntax = ('html', 'txt', 'html+tt2', 'html+tt3')
+    syntax = ('html')
     cmd = ('bemlint', '--format', 'compact')
     version_args = '--version'
     version_re = r'v(?P<version>\d+\.\d+\.\d+)'
