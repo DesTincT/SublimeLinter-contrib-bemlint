@@ -1,3 +1,4 @@
+
 #
 # linter.py
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
@@ -20,7 +21,7 @@ class Bemlint(NodeLinter):
     cmd = ('bemlint', '--format', 'compact')
     version_args = '--version'
     version_re = r'v(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.1.0'
+    version_requirement = '>= 1.4.5'
     regex = (
         r'^.+?: line (?P<line>\d+), col (?P<col>\d+), '
         r'(?:(?P<error>Error)|(?P<warning>Warning)) - '
