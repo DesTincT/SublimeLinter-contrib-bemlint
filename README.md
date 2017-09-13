@@ -1,4 +1,4 @@
-SublimeLinter-contrib-bemlint 
+SublimeLinter-contrib-bemlint
 ================================
 
 [![Build Status](https://travis-ci.org/DesTincT/SublimeLinter-contrib-bemlint.svg?branch=master)](https://travis-ci.org/DesTincT/SublimeLinter-contrib-bemlint)
@@ -23,7 +23,7 @@ Before using this plugin, you must ensure that `bemlint` is installed on your sy
 1. If you are using `zsh` and `oh-my-zsh`, do not load the `nvm` plugin for `oh-my-zsh`.
 
 
-**Note:** This plugin requires `bemlint` __1.4.5__ or later.
+**Note:** This plugin requires `bemlint` __1.6.0__ or later.
 
 ### Linter configuration
 In order for `bemlint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
