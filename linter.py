@@ -14,7 +14,7 @@
 from SublimeLinter.lint import NodeLinter, util
 
 
-class BemlintCommand(NodeLinter):
+class Bemlint(NodeLinter):
     """Provides an interface to bemlint."""
 
     syntax              = ('html', 'html+tt2', 'html+tt3')
