@@ -17,11 +17,8 @@ from SublimeLinter.lint import NodeLinter, util
 class Bemlint(NodeLinter):
     """Provides an interface to bemlint."""
 
-    syntax = ('html', 'html+tt2', 'html+tt3')
-    cmd = ('bemlint', '@', '--format', 'compact')
-    version_args = '--version'
-    version_re = r'v(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.4.5'
+    name = 'bemlint'
+    cmd = 'bemlint @ ${args}'
     config_file = ('--config', '.bemlint.json')
     regex = (
         r'^.+?: line (?P<line>\d+), col (?P<col>\d+), '
@@ -32,3 +29,13 @@ class Bemlint(NodeLinter):
     line_col_base = (1, 1)
     error_stream = util.STREAM_BOTH
     tempfile_suffix = 'bem'
+
+    defaults = {
+        'selector': 'text.html',
+        '--format': 'compact',
+    }
+
+    # the following attributes are marked useless for SL4
+    version_args = '--version'
+    version_re = r'v(?P<version>\d+\.\d+\.\d+)'
+    version_requirement = '>= 1.4.5'
