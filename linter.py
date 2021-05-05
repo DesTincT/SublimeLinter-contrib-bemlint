@@ -18,7 +18,7 @@ class Bemlint(NodeLinter):
     """Provides an interface to bemlint."""
 
     name = 'bemlint'
-    cmd = 'bemlint @ ${args}'
+    cmd = 'bemlint ${temp_file} ${args}'
     config_file = ('--config', '.bemlint.json')
     regex = (
         r'^.+?: line (?P<line>\d+), col (?P<col>\d+), '
